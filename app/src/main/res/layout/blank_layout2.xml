@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+
+    >
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send mail"
+        android:id="@+id/sendEmail"
+        android:onClick="alpha"
+        android:background="#3bf660"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="187dp" />
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:onClick="alpha"
+        android:id="@+id/shutdown"
+        android:drawableTop="@drawable/sd"
+        android:gravity="center_vertical|center_horizontal"
+        android:contextClickable="true"
+        android:layout_alignTop="@+id/loggoff"
+        android:layout_toLeftOf="@+id/sendEmail"
+        android:layout_toStartOf="@+id/sendEmail" />
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:id="@+id/loggoff"
+        android:onClick="alpha"
+        android:drawableTop="@drawable/lo"
+        android:gravity="center_vertical|center_horizontal"
+        android:contextClickable="true"
+        android:layout_marginTop="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/sendEmail"
+        android:layout_toEndOf="@+id/sendEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Logoff"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/shutdown"
+        android:layout_alignRight="@+id/loggoff"
+        android:layout_alignEnd="@+id/loggoff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ShutDown"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/shutdown"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="55dp"
+        android:layout_toLeftOf="@+id/loggoff"
+         />
+
+
+</RelativeLayout>
